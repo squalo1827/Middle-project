@@ -11,9 +11,146 @@ header, footer {
 	background-color: #000000;
 	height: 100px;
 }*/
-.nav-area {
+
+body {
+	margin: 0;
+	background-color: #000000;
+}
+
+.container {
 	max-width: 1320px;
+	height: 568px;
 	margin: 0 auto;
+}
+
+@font-face {
+	font-family: RingBearer;
+	src: url(../fonts/RingBearer.TTF);
+}
+
+header, footer {
+	background-color: #000000;
+	height: 100px;
+
+}
+
+header figure {
+	margin: 0;
+	padding: 10px 0;
+	text-align: center;
+}
+
+header a {
+	display: inline-block;
+}
+
+header img {
+	max-height: 80px;
+	vertical-align: bottom;
+}
+
+nav:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+nav {
+	background-color: #151515;
+	height: 70px;
+	border-style: solid;
+	border-color: #383838;
+	border-width: 1px 0;
+	text-align: center;
+}
+
+nav ul {
+	display: inline-block;
+	margin: 0;
+	padding: 17px 0;
+	font: 20pt RingBearer;
+}
+
+nav li {
+	list-style:  none;
+	float: left;
+	margin: 0 23px;
+}
+
+nav a {
+	display: inline-block;
+	text-decoration: none;;
+	color: #977C09;
+}
+
+article h3 {
+	margin: 0;
+	font: 20pt RingBearer;
+}
+
+article p {
+	font: 16pt Candara, sans-serif;
+}
+
+footer {
+	text-align: center;
+	border-style: solid;
+	border-color: #383838;
+	border-width: 1px 0 0 0;
+	padding: 39px 0;
+}
+
+footer p {
+	margin: 0;
+	font: 16pt Candara, sans-serif;
+	color: #BFBFBF;
+}
+
+.article-background {
+	background-image: url("../background.jpg");
+	width: 1080px;
+	height: 568px;
+	box-shadow: 0 0 8px 8px white inset;
+}
+
+.concept-bg {
+	background-image: url("../image/Concept/background.jpg");
+	background-size: 1080px;
+}
+
+.concept-padding {
+	padding: 60px 240px;
+}
+
+.world-bg {
+	background-image: url("../image/World/Middle Earth2.jpg");
+	background-size: 720px;
+}
+
+.world-padding {
+	padding: 60px 360px;
+}
+
+.influence-bg {
+	background-image: url("../image/influence/Inflence_bg.jpg");
+	background-size: 720px;
+}
+
+.content {
+	background-color: #000000;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	color: #BFBFBF;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.hr-line {
+	border-style: solid;
+	border-width: 1px;
+	width: 200px;
+	margin: 10px auto;
 }
 
 /*Tony 2017/4/25 12:53am*/
