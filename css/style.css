@@ -102,7 +102,7 @@ footer {
 
 footer p {
 	margin: 0;
-	font: 16pt Candara, sans-serif;	
+	font: 16pt Candara, sans-serif;
 	color: #BFBFBF;
 }
 
@@ -133,7 +133,7 @@ footer p {
 
 .influence-bg {
 	background-image: url("../image/influence/Inflence_bg.jpg");
-	background-size: 720px;	
+	background-size: 720px;
 }
 
 .content {
@@ -151,4 +151,54 @@ footer p {
 	border-width: 1px;
 	width: 200px;
 	margin: 10px auto;
+}
+
+/*Tony 2017/4/25 12:53am*/
+.clear::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+html{
+		background-color: #000;
+}
+
+.contain {
+	max-width: 1320px;
+	margin-left: 120px;
+	margin-right: 120px;
+	padding: 77px 226px;
+}
+
+.author_img {
+	margin: 0px;
+	text-align: center;
+	float: left;
+}
+
+.author_img img {
+	height: 414px;
+	margin-right: 43px;
+}
+
+.author_detail{
+	max-width: 522px;
+	float: left;
+	text-align: center;
+}
+
+.author_name{
+	text-align: center;
+	font-family: "RingBearer";
+	font-size: 20px;
+	color: rgb(191,191,191);
+	border-bottom: #FFF 1px solid;
+}
+
+.author_life p{
+	text-align: justify;
+	font-family: "Candara";
+	font-size: 16px;
+	color: rgb(191,191,191);
 }
