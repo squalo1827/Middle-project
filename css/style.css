@@ -12,6 +12,16 @@ header, footer {
 	height: 100px;
 }*/
 
+.index {
+	text-align: center;
+	padding-top: 300px;
+}
+
+.press-button {
+	font: 28pt RingBearer;
+	color: #B9880F;
+}
+
 body {
 	margin: 0;
 	background-color: #000000;
@@ -102,7 +112,7 @@ footer {
 
 footer p {
 	margin: 0;
-	font: 16pt Candara, sans-serif;
+	font: 16pt Candara, sans-serif;	
 	color: #BFBFBF;
 }
 
@@ -133,7 +143,7 @@ footer p {
 
 .influence-bg {
 	background-image: url("../image/influence/Inflence_bg.jpg");
-	background-size: 720px;
+	background-size: 720px;	
 }
 
 .content {
@@ -153,52 +163,51 @@ footer p {
 	margin: 10px auto;
 }
 
-/*Tony 2017/4/25 12:53am*/
-.clear::after{
-  content: "";
-  display: block;
-  clear: both;
+.author-area {
+	display: inline-block;
+	background-color: #000000;
+	color: #BFBFBF;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 77px 228px;
 }
 
-html{
-		background-color: #000;
-}
-
-.contain {
-	max-width: 1320px;
-	margin-left: 120px;
-	margin-right: 120px;
-	padding: 77px 226px;
-}
-
-.author_img {
-	margin: 0px;
-	text-align: center;
+.author-img {
 	float: left;
+	padding-left: 20px;
 }
 
-.author_img img {
-	height: 414px;
-	margin-right: 43px;
+.author-img figure {
+	margin: 0;
 }
 
-.author_detail{
-	max-width: 522px;
+.author-img img {
+	max-height: 414px;
+	vertical-align: bottom;
+}
+
+.author-detail {
+	display: inline-block;
 	float: left;
+	margin-left: 80px;
+	box-sizing: border-box;
+}
+
+.author-detail h3 {
+	display: block;
 	text-align: center;
 }
 
-.author_name{
-	text-align: center;
-	font-family: "RingBearer";
-	font-size: 20px;
-	color: rgb(191,191,191);
-	border-bottom: #FFF 1px solid;
+.author-hr-line {
+	border-style: solid;
+	border-width: 1px;
+	width: 450px;
+	margin: 15px auto;
 }
 
-.author_life p{
+.author-detail p {
+	margin: 0;
+	display: inline-block;
 	text-align: justify;
-	font-family: "Candara";
-	font-size: 16px;
-	color: rgb(191,191,191);
+	width: 450px;
 }
