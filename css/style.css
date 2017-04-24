@@ -1,8 +1,18 @@
-@font-face {
+/*@font-face {
 	font-family: RingBearer;
 	src: url(RingBearer.TTF);
 }
 
 .ringBearer {
 	font-family: RingBearer, serif;
+}
+
+header, footer {
+	background-color: #000000;
+	height: 100px;
+}*/
+
+.nav-area {
+	max-width: 1320px;
+	margin: 0 auto;
 }
