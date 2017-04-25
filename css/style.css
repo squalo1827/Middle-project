@@ -232,7 +232,13 @@ footer p {
 	padding: 0;
 }
 
-.introduction-img-list li {
+.introduction-img-list li{
+
+}
+
+.introduction-img-list li a:hover {
+	display: block;
+	opacity: 1;
 
 }
 
@@ -243,11 +249,13 @@ footer p {
 .character-list img {
 	max-height: 52px;
 	vertical-align: bottom;
+	opacity: 0.5;
 }
 
 .race-list img {
 	max-height: 78px;
 	vertical-align: bottom;
+	opacity: 0.5;
 }
 
 .series-list li {
@@ -257,6 +265,7 @@ footer p {
 .series-list img {
 	max-height: 100px;
 	vertical-align: bottom;
+	opacity: 0.5;
 }
 
 .selected-img {
