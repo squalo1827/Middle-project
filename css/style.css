@@ -300,3 +300,73 @@ footer p {
 	text-align: justify;
 	font: 12pt Candara;
 }
+
+.tab {
+
+}
+
+.tab ul {
+	margin: 0;
+	padding: 0;
+	font: 16pt RingBearer;
+}
+
+.tab li {
+	list-style: none;
+	float: left;
+	margin: 0 30px;
+}
+
+.tab a {
+	display: inline-block;
+	text-decoration: none;
+	color: #BFBFBF;
+}
+
+.movie-hr-line {
+	display: inline-block;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #BFBFBF;
+	width: 1090px;
+}
+
+.movie-area {
+	display: inline-block;
+	margin: 20px 0;
+	padding: 0 111px;
+	box-sizing: border-box;
+}
+
+.movie-area-left {
+	float: left;
+}
+
+.active-movie {
+	width: 639px;
+	height: 359px;
+}
+
+.movie-area-right {
+	float: left;
+	margin-left: 45px;
+}
+
+.movie-area-right ul {
+	margin: 0;
+	padding: 0;
+}
+
+.movie-area-right li {
+	
+	margin-bottom: 20px;
+}
+
+.moive-area-right a {
+
+}
+
+.movie-area-right iframe {
+	width: 185px;
+	height: 104px;
+}
