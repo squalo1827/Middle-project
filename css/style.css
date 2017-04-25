@@ -236,7 +236,7 @@ footer p {
 
 }
 
-.introduction-img-list li a:hover {
+.introduction-img-list li img:hover {
 	opacity: 1;
 }
 
@@ -365,7 +365,7 @@ footer p {
 }
 
 .movie-area-right li {
-	
+
 	margin-bottom: 20px;
 }
 
@@ -380,5 +380,5 @@ footer p {
 
 .movie-area-right img {
 	width: 185px;
-	height: 104px;	
+	height: 104px;
 }
