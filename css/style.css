@@ -1,11 +1,16 @@
 .index {
 	text-align: center;
-	padding-top: 300px;
+	padding-top: 180px;
 }
 
 .press-button {
 	font: 28pt RingBearer;
 	color: #B9880F;
+}
+
+.index a:hover{
+	opacity: 0.6;
+	text-decoration: none;
 }
 
 body {
