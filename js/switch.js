@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
   $(".introduction-img-list img").click(function(){
     $(".selected-img img").attr("src",$(this).attr("src").replace("_eye",""));
     $(".introduction-img-list img").css("opacity", "0.5");
@@ -7,4 +7,31 @@ $(document).ready(function(){
   });
 
 
+});*/
+
+var detail = {
+	'aragorn': "In The Fellowship of the Ring, Aragorn joined Frodo Baggins, Bilbo's adopted heir, and three of Frodo's friends at the Inn of the Prancing Pony in Bree; a letter from Gandalf convinced Frodo to trust Aragorn. The four hobbits had set out from the Shire to bring the One Ring to Rivendell.With Aragorn's help the Hobbits escaped the pursuing Nazgul and reached Rivendell. There Frodo volunteered to destroy the Ring in the fires of Mount Doom, and Aragorn was chosen as a member of the Fellowship of the Ring to accompany him. ",
+	'frodo': "The Fellowship of the Ring opens as Frodo came of age (at 33 years old) and Bilbo left the Shire for good on his one hundred and eleventh birthday. Frodo inherited Bag End and Bilbo's ring, which were both introduced in The Hobbit. Frodo kept the Ring hidden for 17 years, resulting in it giving him the same longevity of Bilbo, until Gandalf returned to tell him that it was the One Ring of the Dark Lord Sauron, who desired to use it to conquer Middle-earth.	Realizing that he was a danger to the Shire as long as he remained there with the Ring, Frodo decided to leave home and take the Ring to Rivendell, home of Elrond, a mighty Elf lord...",
+	'gandalf': "Returning to the Shire, in T.A. 3018, Gandalf confirmed his suspicions by throwing the Ring into Frodo's hearth-fire and reading the writing that appeared on the Ring's surface. He told Frodo the full history of the Ring, and urged him to take the Ring to Rivendell; for he would be in grave danger if he stayed in the Shire. Gandalf said he would attempt to return for Frodo's 50th birthday party, in order to accompany him on the road thereafter; and that meanwhile Frodo should arrange to leave quietly, as the servants of Sauron would be searching for him. Outside the Shire, Gandalf encountered Radagast the Brown, another of the Istari, who brought the news that the Nazgul had ridden forth and crossed the River Anduin—and a request from Saruman that Gandalf come to Isengard. Gandalf left a letter to Frodo at the inn in Bree, and headed towards Isengard. There Saruman revealed his true colours, urging Gandalf to help him obtain the Ring for his own use. Gandalf refused, and Saruman imprisoned him at the top of the tower of Orthanc...",
+	'gimli': "Gimli was a remote descendant of Durin the Deathless, chief of the Seven Fathers of the Dwarves and ancestor to the Dwarven people to which Gimli belonged, the Longbeards. Gimli was introduced at the Council of Elrond Half-elven. Gimli and his father were attending the Council to bring news of their home, Erebor, and to warn that the Dark Lord Sauron was searching for the One Ring.  Frodo volunteered for the task, and Elrond chose eight people of varying races to aid him in his task — including Gimli. Within the Fellowship there was initially friction between Gimli and the elf Legolas, for various reasons: more recently Thranduil, Legolas' father, once imprisoned Gimli's father Gloin.",
+	'gollum': "The Ring, which Gollum referred to as 'my precious' or 'precious', extended his life far beyond natural limits. Centuries of the Ring's influence twisted Gollum's body and mind, and, by the time of the novels, he had 'come to love and hate the Ring, just as he loved and hated himself.'' Throughout the story, Gollum was torn between his lust for the Ring and his desire to be free of it. Bilbo Baggins found the Ring and took it for his own, and Gollum afterwards pursued it for the rest of his life. Gollum finally seized the Ring from Frodo Baggins at the Cracks of Doom in Orodruin in Mordor; but he fell into the fires of the volcano, where both he and the Ring were destroyed.",
+	'legolas': "Legolas was the son of Thranduil, King of the Woodland Realm of Northern Mirkwood,who appears as 'the Elvenking' in The Hobbit. Thranduil ruled over the Silvan Elves or 'Wood-elves' of Mirkwood. Legolas was introduced in The Fellowship of the Ring, at the Council of Elrond in Rivendell, where he came as a messenger from his father to discuss Gollum's escape from their guard.Legolas was chosen to be a member of the Fellowship of the Ring, charged with destroying the One Ring. He accompanied the other members in their travels from Rivendell to Amon Hen, serving as the group's archer.",
+	'ring-ghost': "The Nazgul wore their rings long enough that their physical forms faded away until they had become entirely invisible to mortal eyes. Their black robes gave them visible form. During the assault on Minas Tirith, the leader of the Nine, the Witch-king of Angmar, cast back his hood to reveal a crown, but the head that wore it was invisible. While wearing the One Ring, Frodo perceived them as pale figures robed in white, with 'haggard hands' and wearing crowns. In The Fellowship of the Ring they were armed with steel swords, while the Witch-king wielded a Morgul blade that could turn its victim into a wraith. During the Battle of the Pelennor Fields, the Witch-king bore a 'long pale sword', and later used a mace against Eowyn.",
+	'samwise-gamgee': "Samwise Gamgee is first introduced in The Fellowship of the Ring. Sam is Frodo Baggins' gardener, having inherited the position as Baggins' gardener from his father, Hamfast 'Gaffer' Gamgee. As 'punishment' for eavesdropping on Gandalf's conversation with Frodo regarding the One Ring, Sam was made Frodo's first companion on his journey to Rivendell. They were joined by Meriadoc Brandybuck and Peregrin Took, Frodo's cousins, and journeyed together to Rivendell, where the Council of Elrond took place and Sam joined the Fellowship of the Ring.",
+	'sauron': "the reorganizing and rehabilitation of Middle-earth, 'neglected by the gods,' Sauron  becomes a reincarnation of Evil, and a thing lusting for Complete Power', eventually rising to become 'master and god of Men'. Gandalf deduced that the ring that Bilbo had found in Gollum's cave was indeed Sauron's lost Master-ring. He informed Frodo about the true nature of the heirloom Bilbo had left for him, and its terrible potential if Sauron should ever regain it: 'The Enemy still lacks one thing to give him strength and knowledge to beat down all resistance, break the last defences, and cover all the lands in a second darkness. He lacks the One Ring... So he is seeking it, seeking it, and all his thought is bent on it.' Gandalf went for advice to Saruman, but discovered that he had been corrupted by his long studies of Sauron. Using the palantir in the tower of Orthanc, Saruman was now in communication with the Dark Lord and acted as his ally, though he also secretly hoped to take the Ring for himself and use its power to supplant Sauron."
+};
+
+$(document).ready(function() {
+	$(".introduction-img-list img").click(function() { 
+		var name = $(this).attr("name");
+		$(".selected-img img").attr("src", "image/character/"+name+".jpg");
+		$(".introduction-content > h3").text(name);
+		$(".introduction-content > p").text(detail[name]);
+		$(".introduction-img-list img").removeAttr("style");
+		$(this).css("opacity", 1);
+		/*$(".introduction-img-list img").css("opacity", 0.5);
+		$(this).css("opacity", 1);*/
+		console.log(detail[name]);
+		console.log(name);
+	});
 });
