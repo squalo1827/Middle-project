@@ -22,7 +22,7 @@ var detail = {
 };
 
 $(document).ready(function() {
-	$(".introduction-img-list img").click(function() { 
+	$(".introduction-img-list img").click(function() {
 		var name = $(this).attr("name");
 		$(".selected-img img").attr("src", "image/character/"+name+".jpg");
 		$(".introduction-content > h3").text(name);
