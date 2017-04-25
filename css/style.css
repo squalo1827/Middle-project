@@ -79,6 +79,10 @@ nav a {
 	color: #977C09;
 }
 
+nav a:hover{
+	opacity: 0.5;
+}
+
 ul li{
 	margin-top: 2px;
 }
