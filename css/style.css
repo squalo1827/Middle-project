@@ -161,12 +161,12 @@ footer p {
 }
 
 .reference-bg{
-
+	background-image: url("../image/influence/Inflence_bg.jpg");
 	background-size: 720px;
 }
 
 .reference-padding{
-	padding: 60px 360px;
+	padding: 60px 300px;
 }
 
 .content {
@@ -185,6 +185,8 @@ footer p {
 }
 
 .reference-list{
+	padding-top: 30px;
+	margin: auto;
 	max-height: 448px;
 	line-height: 30px;
 	list-style: none;
@@ -194,6 +196,21 @@ footer p {
 .reference-list a{
 	text-decoration: none;
 	color: #BFBFBF;
+}
+
+.reference-left{
+	display: block;
+	float: left;
+}
+
+.reference-right{
+	display: block;
+	float: left;
+}
+
+.reference-mid{
+	display: block;
+	float: left;
 }
 
 .hr-line {
