@@ -30,18 +30,24 @@ var detail = {
 		'man' : "The terms Man and Men refer to humankind – in contrast to Elves, Dwarves, Orcs, and other humanoid races – and does not denote gender. Men bear the Gift of Men, mortality. Elves are immortal, in the sense that they do not perceivably age, and even if their bodies are slain, their spirits remain bound to the world, going to the Halls of Mandos, where they are later re-embodied; a cycle that will perpetuate for them until the world ends. Although all Men are related to one another, there are many different groups with different cultures."
 	},
 	'series' : {
-		'The-Fellowship-Of-The-Ring' : "In the Second Age of Middle-earth, the Dark Lord Sauron forges the One Ring in Mount Doom to conquer all, abandoning a great part of his power to it in order to dominate, through it, at a distance, the other Rings of Power, which had been granted to lords of Elves, Dwarves and Men. An army of men and elves battle Sauron’s forces in Mordor, where Prince Isildur of Gondor cuts the One Ring off of Sauron's finger, thereby temporarily destroying his physical shape, and decides to take care of the Ring himself, but the evil influence of the Ring corrupts Isildur, preventing him from destroying it in Mount Doom. Isildur is later killed by Orcs, and the Ring is lost for 2,500 years, found and owned by Gollum for five centuries. The Ring is then found by a Hobbit named Bilbo Baggins.",
-		'The-Two-Tower' : "Frodo Baggins and Samwise Gamgee continue their journey to Mordor to destroy the One Ring by throwing it into Mount Doom. They are attacked in the night by Gollum, former owner of the Ring, but they capture him. Sympathising with Gollum for what he perceives as their shared burden, Frodo asks Gollum to lead them safely to Mordor, despite Sam’s objections. Meanwhile, Aragorn, Legolas, and Gimli pursue the Uruk-hai who kidnapped their friends Merry and Pippin. The Uruk-hai are slaughtered by the Rohirrim, army of Rohan, but the two Hobbits escape into Fangorn Forest where they meet the Ent Treebeard. Aragorn’s group later meet the Rohirrim who have been banished by their king Theoden, who is being manipulated by Saruman’s servant Grima Wormtongue. Tracking the Hobbits in Fangorn, Aragorn’s group encounter a resurrected Gandalf who perished in Moria, but was revived to help save Middle-earth.",
-		'The-Return-Of-The-King' : "Gandalf leads Aragorn, Legolas, Gimli, and King Theoden to Isengard where they reunite with Merry and Pippin. With Saruman defeated, Gandalf retrieves Saruman's palantir. Pippin later steals a glance into the seeing-stone, and suffers a mental attack from Sauron himself. Gandalf deduces that Sauron will attack Gondor's capital Minas Tirith. He rides there to warn them, taking Pippin with him because Sauron believes Pippin is the ring bearer.",
-		'The-Hobbit': "Bilbo and the Dwarves watch from the Lonely Mountain as the dragon Smaug sets Laketown ablaze. Bard the Bowman breaks out of prison, and eventually kills Smaug with the black arrow brought to him by his son Bain. Smaug's falling body crushes the fleeing Master of Laketown, who was escaping Laketown on a boat laden with the town's gold. Bard reluctantly becomes the new leader of the people of Laketown, as they seek refuge in the ruins of Dale, while Legolas travels to investigate Mount Gundabad with Tauriel. Thorin, now struck with 'dragon sickness' over the vast treasure in the mountain, searches obsessively for the Arkenstone, which Bilbo had previously found but kept hidden. Thorin, hearing that Laketown survivors have fled to Dale, orders the entrance of the Lonely Mountain sealed off."
+		'The Fellowship Of The Ring' : "In the Second Age of Middle-earth, the Dark Lord Sauron forges the One Ring in Mount Doom to conquer all, abandoning a great part of his power to it in order to dominate, through it, at a distance, the other Rings of Power, which had been granted to lords of Elves, Dwarves and Men. An army of men and elves battle Sauron’s forces in Mordor, where Prince Isildur of Gondor cuts the One Ring off of Sauron's finger, thereby temporarily destroying his physical shape, and decides to take care of the Ring himself, but the evil influence of the Ring corrupts Isildur, preventing him from destroying it in Mount Doom. Isildur is later killed by Orcs, and the Ring is lost for 2,500 years, found and owned by Gollum for five centuries. The Ring is then found by a Hobbit named Bilbo Baggins.",
+		'The Two Tower' : "Frodo Baggins and Samwise Gamgee continue their journey to Mordor to destroy the One Ring by throwing it into Mount Doom. They are attacked in the night by Gollum, former owner of the Ring, but they capture him. Sympathising with Gollum for what he perceives as their shared burden, Frodo asks Gollum to lead them safely to Mordor, despite Sam’s objections. Meanwhile, Aragorn, Legolas, and Gimli pursue the Uruk-hai who kidnapped their friends Merry and Pippin. The Uruk-hai are slaughtered by the Rohirrim, army of Rohan, but the two Hobbits escape into Fangorn Forest where they meet the Ent Treebeard. Aragorn’s group later meet the Rohirrim who have been banished by their king Theoden, who is being manipulated by Saruman’s servant Grima Wormtongue. Tracking the Hobbits in Fangorn, Aragorn’s group encounter a resurrected Gandalf who perished in Moria, but was revived to help save Middle-earth.",
+		'The Return Of The King' : "Gandalf leads Aragorn, Legolas, Gimli, and King Theoden to Isengard where they reunite with Merry and Pippin. With Saruman defeated, Gandalf retrieves Saruman's palantir. Pippin later steals a glance into the seeing-stone, and suffers a mental attack from Sauron himself. Gandalf deduces that Sauron will attack Gondor's capital Minas Tirith. He rides there to warn them, taking Pippin with him because Sauron believes Pippin is the ring bearer.",
+		'The Hobbit': "Bilbo and the Dwarves watch from the Lonely Mountain as the dragon Smaug sets Laketown ablaze. Bard the Bowman breaks out of prison, and eventually kills Smaug with the black arrow brought to him by his son Bain. Smaug's falling body crushes the fleeing Master of Laketown, who was escaping Laketown on a boat laden with the town's gold. Bard reluctantly becomes the new leader of the people of Laketown, as they seek refuge in the ruins of Dale, while Legolas travels to investigate Mount Gundabad with Tauriel. Thorin, now struck with 'dragon sickness' over the vast treasure in the mountain, searches obsessively for the Arkenstone, which Bilbo had previously found but kept hidden. Thorin, hearing that Laketown survivors have fled to Dale, orders the entrance of the Lonely Mountain sealed off."
 	}
 
 };
 
 $(document).ready(function() {
-
 	$(function(){
 		$(".introduction-img-list li").first().find("img").css("opacity", 1);
+		var title = $('title').text().toLowerCase();
+		if(title == 'character')
+			Update(title, 'aragorn');	
+		else if(title == 'race')
+			Update(title, 'dwarves');
+		else
+			Update(title,'The Fellowship Of The Ring');
 	});
 
 	$(".introduction-img-list img").click(function() { 
@@ -49,16 +55,16 @@ $(document).ready(function() {
 		var name = $(this).attr("name");
 		$(".introduction-img-list img").removeAttr("style");
 		$(this).css("opacity", 1);
-		$(".selected-img img").attr("src", "image/"+title+"/"+name+".jpg");
-		$(".introduction-content > h3").text(name);
-		$(".introduction-content > p").text(detail[title][name]);
-
+		Update(title, name);
 
 		console.log(title);
 		console.log(name);
 		console.log(detail[title][name]);
-		/*$(".introduction-img-list img").css("opacity", 0.5);
-		$(this).css("opacity", 1);*/
-
 	});
 });
+
+function Update(title, name) {
+	$(".selected-img img").attr("src", "image/"+title+"/"+name+".jpg");
+	$(".introduction-content > h3").text(name);
+	$(".introduction-content > p").text(detail[title][name]);
+}

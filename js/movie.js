@@ -38,7 +38,7 @@ $(document).ready(function() {
 function Update() {	
 		$(".movie-area-right li").each(function(index) {
 			var tab = $(".tab").attr("name");
-			console.log(movie[tab][index]);
+			//console.log(movie[tab][index]);
 			var src = movie[tab][index];
 			$(this).find("a").attr("href", src);
 			//var src = $(this).find("a").attr("href");
@@ -50,8 +50,8 @@ function Update() {
 				$("iframe").attr("src", src);
 				$(".movie-area-left>p").text(tab + " TRAILER " + (index+1));
 			}
-			console.log(index);
+			/*console.log(index);
 			console.log(tab);
-			console.log(movie['Hello World']);
+			console.log(movie['Hello World']);*/
 		});
 	}
