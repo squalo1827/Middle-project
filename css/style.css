@@ -1,15 +1,29 @@
 .index {
 	text-align: center;
-	padding-top: 180px;
+	line-height: 700px;
+	text-align: center;
+	vertical-align: middle;
 }
 
 .press-button {
 	font: 28pt RingBearer;
 	color: #B9880F;
+	opacity: 1;
+	transition: all 0.3s;
+
+}
+
+.press-button:hover{
+	opacity: 0.6;
+	transition: all 0.3s;
+}
+
+.index a{
+	display: block;
+	margin-top: -250px;
 }
 
 .index a:hover{
-	opacity: 0.6;
 	text-decoration: none;
 }
 
@@ -79,13 +93,16 @@ nav li {
 }
 
 nav a {
+	opacity: 1;
+	transition: all 0.3s;
 	display: inline-block;
-	text-decoration: none;;
+	text-decoration: none;
 	color: #977C09;
 }
 
 nav a:hover{
 	opacity: 0.5;
+	transition: all 0.3s;
 }
 
 ul li{
@@ -93,7 +110,8 @@ ul li{
 }
 
 ul li img{
-	box-shadow:0 0 50px 10px #000;
+	margin-top: 1px;
+	transition: all 0.3s;
 }
 
 article h3 {
@@ -117,13 +135,6 @@ footer p {
 	margin: 0;
 	font: 16pt Candara, sans-serif;
 	color: #BFBFBF;
-}
-
-.article-background {
-	background-image: url("../background.jpg");
-	width: 1080px;
-	height: 568px;
-	box-shadow: 0 0 8px 8px white inset;
 }
 
 .concept-bg {
@@ -267,6 +278,7 @@ footer p {
 
 .introduction-img-list li img:hover {
 	opacity: 1;
+	transition: all 0.3s ease;
 }
 
 .introduction-img-list a {
@@ -369,13 +381,29 @@ footer p {
 
 .movie-area {
 	display: inline-block;
-	margin: 20px 0;
+	margin: 10px 0;
 	padding: 0 111px;
 	box-sizing: border-box;
 }
 
+.movie-area:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
 .movie-area-left {
+	margin: 10px 0;
 	float: left;
+	box-sizing: border-box;
+}
+
+.movie-area-left p {
+	margin: 16px;
+	text-align: center;
+	color: #BFBFBF;
+	font-size: 20pt;
+	letter-spacing: 3px;
 }
 
 .active-movie {
@@ -385,7 +413,8 @@ footer p {
 
 .movie-area-right {
 	float: left;
-	margin-left: 45px;
+	margin-left: 43px;
+	box-sizing: border-box;
 }
 
 .movie-area-right ul {
@@ -394,12 +423,22 @@ footer p {
 }
 
 .movie-area-right li {
-
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 }
 
-.moive-area-right a {
+.movie-area-right a {
+	display: inline-block;
+	text-decoration: none;
+	color: #BFBFBF;
 
+}
+
+.movie-area-right p {
+	margin: 0;
+	width: 185px;
+	font-size: 10pt;
+	text-align: justify;
+	line-height: 15px;
 }
 
 .movie-area-right iframe {
@@ -408,6 +447,9 @@ footer p {
 }
 
 .movie-area-right img {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #BFBFBF;
 	width: 185px;
 	height: 104px;
 }

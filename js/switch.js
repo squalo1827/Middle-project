@@ -39,7 +39,12 @@ var detail = {
 };
 
 $(document).ready(function() {
-	$(".introduction-img-list img").click(function() {
+
+	$(function(){
+		$(".introduction-img-list li").first().find("img").css("opacity", 1);
+	});
+
+	$(".introduction-img-list img").click(function() { 
 		var title = $('title').text().toLowerCase();
 		var name = $(this).attr("name");
 		$(".introduction-img-list img").removeAttr("style");
