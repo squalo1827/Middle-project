@@ -236,8 +236,7 @@ footer p {
 
 }
 
-.introduction-img-list li a:hover {
-	display: block;
+.introduction-img-list li img:hover {
 	opacity: 1;
 
 }
