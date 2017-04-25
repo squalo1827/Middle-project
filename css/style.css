@@ -160,6 +160,15 @@ footer p {
 	background-size: 720px;
 }
 
+.reference-bg{
+
+	background-size: 720px;
+}
+
+.reference-padding{
+	padding: 60px 360px;
+}
+
 .content {
 	background-color: #000000;
 	background-repeat: no-repeat;
@@ -173,6 +182,18 @@ footer p {
 .content p {
 	display: inline-block;
 	margin: 10px 0 0 0;
+}
+
+.reference-list{
+	max-height: 448px;
+	line-height: 30px;
+	list-style: none;
+	text-align: left;
+}
+
+.reference-list a{
+	text-decoration: none;
+	color: #BFBFBF;
 }
 
 .hr-line {
