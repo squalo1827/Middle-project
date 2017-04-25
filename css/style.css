@@ -161,7 +161,7 @@ footer p {
 }
 
 .reference-bg{
-	background-image: url("../image/influence/Inflence_bg.jpg");
+	background-image: url("../image/reference/background.png");
 	background-size: 720px;
 }
 
@@ -184,7 +184,60 @@ footer p {
 	margin: 10px 0 0 0;
 }
 
-.reference-list{
+.reference-area {
+	display: inline-block;
+	width: 100%;
+}
+
+.referebce-area:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.set {
+	display: inline-block;
+	margin: 10px 0;
+}
+
+.reference-area h3 {
+	font-size: 16pt;
+	margin: 10px 0;
+}
+
+.reference-area ul {
+	margin: 0;
+	padding: 0;
+}
+
+.reference-area li {
+	list-style: none;
+	margin: 4px 0;
+}
+
+.reference-area a {
+	display: inline-block;
+	text-decoration: none;
+	color: #BFBFBF;
+}
+
+.reference-area-left {
+	float: left;
+	width: 222px;
+}
+
+.reference-area-mid {
+	float: left;
+	width: 222px;
+	margin: 0 27px;
+}
+
+.reference-area-right {
+	float: left;
+	width: 222px;
+}
+
+/*.reference-list{
 	padding-top: 30px;
 	margin: auto;
 	max-height: 448px;
@@ -211,7 +264,7 @@ footer p {
 .reference-mid{
 	display: block;
 	float: left;
-}
+}*/
 
 .hr-line {
 	border-style: solid;
