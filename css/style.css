@@ -79,6 +79,14 @@ nav a {
 	color: #977C09;
 }
 
+ul li{
+	margin-top: 2px;
+}
+
+ul li img{
+	box-shadow:0 0 50px 10px #000;
+}
+
 article h3 {
 	margin: 0;
 	font: 20pt RingBearer;
