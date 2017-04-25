@@ -137,13 +137,6 @@ footer p {
 	color: #BFBFBF;
 }
 
-.article-background {
-	background-image: url("../background.jpg");
-	width: 1080px;
-	height: 568px;
-	box-shadow: 0 0 8px 8px white inset;
-}
-
 .concept-bg {
 	background-image: url("../image/Concept/background.jpg");
 	background-size: 1080px;
