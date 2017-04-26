@@ -216,9 +216,16 @@ footer p {
 }
 
 .reference-area a {
+	transition: all 0.3s;
+	opacity: 1;
 	display: inline-block;
 	text-decoration: none;
 	color: #BFBFBF;
+}
+
+.reference-area a:hover{
+	opacity: 0.6;
+	transition: all 0.3s;
 }
 
 .reference-area-left {
@@ -436,9 +443,16 @@ footer p {
 }
 
 .tab a {
+	opacity: 1;
+	transition: all 0.3s;
 	display: inline-block;
 	text-decoration: none;
 	color: #BFBFBF;
+}
+
+.tab a:hover{
+	opacity: 0.6;
+	transition: all 0.3s;
 }
 
 .movie-hr-line {
